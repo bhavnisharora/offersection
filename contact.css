@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+   font-family:sans-serif;
+   margin:0.3%;
+}
+
+/* responsive  */
+
+img{
+  position: absolute; 
+  top: 3%;
+  width: 340px;
+  height: 90px;
+
+}
+
+h3{
+  text-align: center;
+  padding-top:45px;
+}
+
+input[type=text], [type=number], select, textarea, option {
+  width:100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family:cursive;
+}
+
+
+
+input[type=submit] {
+  background-color: #2a1fc3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float:left;
+}
+
+input[type=submit]:hover {
+  background-color: #071378;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  img{
+    height:70px;
+  }
+}
+
+.codet{
+	display:flex;
+	justify-content: center;
+	  flex: 25%;
+    flex-wrap: wrap;
+}
+.fas{
+	margin:2rem;
+	}
+	
+	.navtop{
+		margin:1%;
+	font-size:1.1rem;
+	padding-top:0.5rem;
+	font-family:sans-serif;
+}
+.navtop a{
+	text-decoration:none;
+}
+
+h3{
+	word-spacing:4px;
+  letter-spacing: 3px;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  position:relative;
+  bottom:-1rem;
+  margin-top:0rem;
+  overflow:auto;
+  left:0;
+  right:0;
+  background-color:#000000;
+  padding-left:2rem;
+  color:white;
+  width:99%;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  .footer p{
+    text-align: center;
+    size:2rem;
+    color:white;
+  }
